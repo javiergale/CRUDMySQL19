@@ -42,11 +42,11 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
         //loading the image
 
         String im = product.getImagen();
-        Toast.makeText(mCtx, ""+im, Toast.LENGTH_SHORT).show();
+        //Toast.makeText(mCtx, ""+im, Toast.LENGTH_SHORT).show();
 
 
         if(im.isEmpty()) {
-            holder.imageView.setImageResource(R.drawable.image_15);
+            holder.imageView.setImageResource(R.drawable.imgnoencontrada);
         }else{
             Glide.with(mCtx)
                     .load(product.getImagen())

@@ -29,7 +29,6 @@ public class Main2Activity extends AppCompatActivity {
 
     MantenimientoMySQL manto = new MantenimientoMySQL();
 
-
     //Banderas para saber estados de métodos del CRUD.
     boolean estadoGuarda = false;
 
