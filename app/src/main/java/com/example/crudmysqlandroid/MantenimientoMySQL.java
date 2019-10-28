@@ -18,7 +18,7 @@ import java.util.Map;
 public class MantenimientoMySQL {
 
     public void guardar(final Context context, final String codigo, final String descripcion, final String precio){
-        String url = "http://mjgl.com.sv/democrudsis21a/guardar.php";
+        String url = "http://mjgl.com.sv/mysql_crud/guardar.php";
         //String url = "localhost/democrudsis21a/guardar.php";
         StringRequest request = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
