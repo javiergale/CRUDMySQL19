@@ -14,11 +14,11 @@
         android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="serif-monospace"
-        android:text="CRUD MYSQL\nJAVA-ANDROID"
+        android:text="CRUD ~ MYSQL\nJAVA-ANDROID"
         android:textAlignment="center"
-        android:textColor="#BB0505"
+        android:textColor="#FFFFFF"
         android:textSize="26dp"
         android:textStyle="bold" />
 
@@ -33,8 +33,11 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="167dp"
-                android:src="@drawable/computadora1" />
+                android:layout_height="100dp"
+                android:src="@drawable/mysql2"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                />
 
             <EditText
                 android:id="@+id/et_codigo"
@@ -42,17 +45,14 @@
                 android:layout_height="wrap_content"
                 android:hint="Ingrese el código"
                 android:inputType="number"
-                android:textColor="#fff"
                 android:background="@drawable/estiloedittext"
-                android:shadowColor="#A82A2A"
-                android:shadowDx="-8"
-                android:shadowDy="-9"
                 android:shadowRadius="5"
                 android:paddingLeft="25dp"
                 android:drawableStart="@drawable/ic_hola"
                 android:drawablePadding="5dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
                 />
 
             <EditText
@@ -84,17 +84,6 @@
                 android:drawablePadding="5dp"
                 />
 
-            <TextView
-                android:id="@+id/tv_resultado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="resultado"
-                android:layout_marginTop="25dp"
-                android:textColor="#fff"
-                android:textAlignment="center"
-                android:textSize="20dp"
-
-                />
 
             <Button
                 android:id="@+id/btn_guardar"
@@ -173,15 +162,14 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"
                 android:text="Editar"
                 android:textColor="#070707"
                 android:background="@drawable/estiloboton"
-                android:shadowColor="#A82A2A"
-                android:shadowDx="20"
-                android:shadowDy="-9"
-                android:shadowRadius="5"
-
+                android:shadowColor="#2314A8"
+                android:shadowDx="-3"
+                android:shadowDy="0"
+                android:shadowRadius="8"
+                android:layout_marginBottom="20dp"
                 />
 
         </LinearLayout>

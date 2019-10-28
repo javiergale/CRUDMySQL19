@@ -62,8 +62,8 @@ public class Consulta_RecyclerView extends AppCompatActivity {
 
                                 JSONObject articulosObject = array.getJSONObject(i);
 
-                                String img = articulosObject.getString("imagen");
-                                Toast.makeText(Consulta_RecyclerView.this, ""+img, Toast.LENGTH_SHORT).show();
+                                //String img = articulosObject.getString("imagen");
+                                //Toast.makeText(Consulta_RecyclerView.this, ""+img, Toast.LENGTH_SHORT).show();
 
                                 /*int codigo = articulosObject.getInt("codigo");
                                 String descripcion = articulosObject.getString("descripcion");
@@ -95,8 +95,8 @@ public class Consulta_RecyclerView extends AppCompatActivity {
         });
 
         //Volley.newRequestQueue(this).add(stringRequest);
-        MySingleton.getInstance(this).addToRequestQueue(stringRequest);
-
+       // MySingleton.getInstance(this).addToRequestQueue(stringRequest);
+        MySingleton.getInstance(Consulta_RecyclerView.this).addToRequestQueue(stringRequest);
     }
 
 

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -40,13 +41,21 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
         //loading the image
 
-        Glide.with(mCtx)
-                .load(product.getImagen())
-                .into(holder.imageView);
+        String im = product.getImagen();
+        Toast.makeText(mCtx, ""+im, Toast.LENGTH_SHORT).show();
 
-        holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
-        holder.textViewDescripcion1.setText(product.getDescripcion());
-        holder.textViewPrecio1.setText(String.valueOf(product.getPrecio()));
+
+        if(im.isEmpty()) {
+            holder.imageView.setImageResource(R.drawable.image_15);
+        }else{
+            Glide.with(mCtx)
+                    .load(product.getImagen())
+                    .into(holder.imageView);
+
+            holder.textViewCodigo1.setText(String.valueOf(product.getCodigo()));
+            holder.textViewDescripcion1.setText(product.getDescripcion());
+            holder.textViewPrecio1.setText(String.valueOf(product.getPrecio()));
+        }
 
     }
 
