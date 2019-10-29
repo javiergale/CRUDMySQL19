@@ -136,7 +136,7 @@ public class MantenimientoMySQL {
 
 
     public void consultar(final Context context, String codigo){
-
+        String var;
     }
 
     public void modificar(final Context context, String codigo, String descripcion, String precio){
